@@ -11,3 +11,10 @@
 main-facelib-phone-rknn.py中额外使用yolo添加了手机检测，当前版本yolo只完成了rknn模型的转换，并未放到NPU上跑，因此可能会有点慢
 
 
+部署方式：
+与开发板通信后，创建虚拟环境python=3.8，然后pip项目中的requirements，安装所需的库，库中已经包含了rk-toolkit-lite2，如果下载不了或者不能用requirement安装，可以自己下载rk-toolkit-lite2.whl并进行安装。安装好后，连接摄像头，查找摄像头设备号（如：video（0），不一定所有人都是这个，我的摄像头被识别到了video（13），使用前提前查一下摄像头），走完上面的流程就可以直接跑了。
+
+
+
+
+
