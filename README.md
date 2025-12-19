@@ -7,7 +7,8 @@
 
 ---疲劳/异常状态:闭眼、打哈欠（张嘴）、歪头/视线偏离
 
-main-facelib-phone-rknn.py中额外使用yolo添加了手机检测，当前版本yolo只完成了rknn模型的转换，并未放到NPU上跑，因此可能会有点慢
+main-facelib-phone-rknn.py中额外使用yolo添加了手机检测，当前版本yolo只完成了rknn模型的转换，并未放到NPU上跑，因此可能会有点慢。
+
 
 
 部署方式：
@@ -18,10 +19,26 @@ main-facelib-phone-rknn.py中额外使用yolo添加了手机检测，当前版�
 
 安装好后，连接摄像头，查找摄像头设备号（如：video（0），不一定所有人都是这个，我的摄像头被识别到了video（13），使用前提前查一下摄像头）。
 
+![image](https://github.com/XiaoMingLiXuan/mediapipe/tree/main/-pic-/cap.png)
+
 走完上面的流程就可以直接跑了。
 
 使用情况：
 
+1.正常状态——normal
+![image](https://github.com/XiaoMingLiXuan/mediapipe/tree/main/-pic-/normal.png)
+
+2.闭眼状态——eye
+![image](https://github.com/XiaoMingLiXuan/mediapipe/tree/main/-pic-/eye.png)
+
+3.打哈欠状态——mouth
+![image](https://github.com/XiaoMingLiXuan/mediapipe/tree/main/-pic-/mouth.png)
+
+4.歪头注意力不集中状态——head
+![image](https://github.com/XiaoMingLiXuan/mediapipe/tree/main/-pic-/head.png)
+
+
+以上截图是在mobax上，使用x service投影到pc上截的图，但是在rk3568上跑，受x service的传输影响，所以帧率显示5帧，板子上理论可以跑到10帧+，基本流畅，rk3588上实测可达到30帧+。
 
 
 
