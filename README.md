@@ -1,4 +1,3 @@
-<img width="636" height="441" alt="屏幕截图 2025-12-19 140932" src="https://github.com/user-attachments/assets/929b6247-15ab-45a2-b7da-c4dc3caa1bae" /><img width="636" height="441" alt="屏幕截图 2025-12-19 140932" src="https://github.com/user-attachments/assets/b60c08df-e7b3-44fe-ba48-7f41071a0ac4" /># -mediapipe-
 这个项目是将mediapipe的疲劳检测方法移植到国产化芯片RK系列开发板上
 
 当前这个版本使用的RK开发板是RK3568
